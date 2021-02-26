@@ -13,7 +13,7 @@ public class IdGenerator2 {
      * 4.静态内部类：有点类似饿汉式，但又能做到了延迟加载
      * 5.枚举
      */
-    //3
+    //3 双重检测
     private AtomicLong id = new AtomicLong(0);
     private static IdGenerator2 instance;
 

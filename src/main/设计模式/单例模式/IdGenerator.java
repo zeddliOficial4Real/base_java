@@ -12,21 +12,22 @@ public class IdGenerator {
     /**
      * 1.恶汉式：初始化时创建好对象
      * 2.懒汉式：调用方法时再加载对象
-     * */
+     */
     private AtomicLong id = new AtomicLong(0);
 
-    //1.
+    //1.饿汉式
     private static final IdGenerator instance = new IdGenerator();
-    //2.
+    //2.懒汉式
 //    private static final IdGenerator instance;
 
     private IdGenerator() {
     }
+
     //1.初始化时加载
     private IdGenerator getInstanse() {
         return instance;
     }
-    //2.初始化时加载
+    //2.调用方法时加载
     /*private IdGenerator getInstanse() {
         return new IdGenerator();
     }*/
