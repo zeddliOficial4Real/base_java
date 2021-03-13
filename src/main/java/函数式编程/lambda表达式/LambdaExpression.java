@@ -9,10 +9,9 @@ public class LambdaExpression {
 
     //1.无参方法的lambda
     static Description description = () -> "1.Description.void: zero param";
-    //
+    //2.一个参数
     static Body body = h -> h + "2.Body.void: one param";
     static Body body1 = (h) -> h + "2.Body.void: one param";
-
     //3. multi param
     static Multi mult = (h, n) -> h + n; // [4]
 

@@ -14,7 +14,8 @@ public class Demo {
     }
 
     public void judgeTheCriminal(){
-        switch (nameEnum){ //switch与enum的组合
+        //switch与enum的组合
+        switch (nameEnum){
             case NAME:
                 System.out.println("this people's name is:"+nameEnum);
                 break;

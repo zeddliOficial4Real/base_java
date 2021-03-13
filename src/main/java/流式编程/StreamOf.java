@@ -13,12 +13,14 @@ public class StreamOf {
 
     public static void main(String[] args) {
         //使用StreamOf创建流
-        Stream.of("this","Stream of","key","words").forEach(System.out::println);
+        String[] arr1 = {"",""};
+        String[] arr = new String[]{"this", "Stream of", "key", "words"};
+        Stream.of(arr).forEach(System.out::println);
 
         //集合创建流
         Set<String> stringSet = new HashSet<>(Arrays.asList("It's a wonderful day for pie!".split(" ")));
-        stringSet.stream().map(x -> x+"").forEach(System.out::println);
-        System.out.println();
+        stringSet.stream().map(x -> x + "").forEach(System.out::println);
+        System.out.println("=================");
 
         Map<String, Double> m = new HashMap<>();
         m.put("pi", 3.14159);
@@ -28,7 +30,7 @@ public class StreamOf {
                 .map(e -> e.getKey() + ": " + e.getValue())
                 .forEach(System.out::println);
 
-        System.out.println("===========");
+        System.out.println("================");
         System.out.println(System.getProperty("os.name"));
     }
 }

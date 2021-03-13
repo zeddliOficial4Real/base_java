@@ -1,3 +1,5 @@
+package 异常;
+
 /**
  * @author zedd
  * @date 2021/2/23
